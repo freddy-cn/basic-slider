@@ -12,7 +12,7 @@
 .carousel-container{
     background-color:#444;
     padding:0rem;
-    border-bottom: 1px solid #DEDEDE;
+    border: 1px solid #DEDEDE;
 }
 .outer-frame{
     width:100%;
@@ -24,22 +24,17 @@
     width:100%;
     display:flex;
     overflow-x:visible;
-    transition: margin 2000ms ease-in-out;
-    
+    transition: margin 600ms ease-in-out;
 }
 .slide{
-    /*
-    min-width: 50%;
-    */
-    overflow-y:auto;
     background: transparent;
-    flex-grow:1;
     box-sizing:border-box; 
-    transition: opacity 500ms ease-in, max-height 750ms ease-out;
+    transition: opacity 400ms ease-in, max-height 750ms ease-out;
 }  
 .slide-content{
     margin:1rem;
-    background-color: #FCFCFC;
+    background-color: #0AA;
+    color:#EEE;
     border-radius:0.2rem;
     padding:0.5rem;
 }
@@ -53,6 +48,9 @@
     border:none;
     outline:none;
     cursor:pointer;
+}
+.slide-dot.active{
+    background-color:rgba(50,250,50,0.9);
 }
 .slide-dots-container{
     display:flex;
